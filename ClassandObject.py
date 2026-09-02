@@ -1,8 +1,9 @@
 class Atm:
     def __init__(self):
+        print(id(self))
         self.pin = ''
         self.balance = 0
-        self.menu()
+        #self.menu()
 
     def menu(self):
         while True:
@@ -103,5 +104,32 @@ class Atm:
 
 obj = Atm()  # object can access the things are present in class
 
+print(id(obj))
 
+# obj.add_balance()   => method can be accessed by object
+
+
+# Function inside the class is called method and
+#  the variable inside the class is called attribute
+
+# function outside the class is called function and 
+# the variable outside the class is called variable
+
+
+# Magic methods are the methods which have double underscore 
+# before and after the method name. 
+# For example __init__ is a magic method which is used to initialize the object of the class.
+
+
+# Self is a obj which use to access the function inside the function with the help of self
+# Constructor we will use it when we can't want user input
+# like we can't say user click on that button then our data is store in database,
+#      we won't say user like if internet is on then for this app we will allow the internet 
+#  
+
+
+# Id of self and object of class have smae id in memory 
+
+# why self is use if method want to call each other
+#  they we will call with the help of self 
 
